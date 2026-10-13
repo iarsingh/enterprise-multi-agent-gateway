@@ -1,5 +1,12 @@
 # Enterprise Multi-Agent Platform
 
+## Overview
+
+A multi-agent gateway in which a user request passes from a gateway to a tenant-aware supervisor, which routes it to a specialist agent for RAG, SQL, research, cloud or SRE work, with tools reached over MCP. The service exposes `POST /agent/run`, and a versioned `/v1` ops API handles workspaces, tenant isolation, job approval and audit records. Cluster apply stays false until a human approves.
+
+- **Built with:** Python, pytest, Docker, Docker Compose, GitHub Actions
+- **Scope:** Laptop proof with tests; it uses no hosted model and refuses production apply.
+
 <!-- project-guide:start -->
 ## Project guide
 
